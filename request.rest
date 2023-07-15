@@ -1,0 +1,31 @@
+GET http://localhost:5000/items?page=0&limit=10
+###
+
+GET http://localhost:5000/items/3000
+
+
+###
+PATCH http://localhost:5000/items/3000
+Content-Type: application/json
+
+{
+    "id": 3000,
+    "name": "GUIDE-CHAIN,RR",
+    "noPart": "12053-0239",
+    "model": "ER650HHF",
+    "price": 447000,
+    "stok": 10
+}
+
+###
+
+POST http://localhost:5000/nota
+Content-Type: application/json
+
+{
+    "item": "",
+    "noPart": "43095-0547",
+    "model": "LX150C",
+    "price": 296000,
+    "stok": 0
+}
