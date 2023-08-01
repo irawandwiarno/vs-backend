@@ -8,6 +8,7 @@ const Nota = db.define(
   {
     Item: DataTypes.JSON,
     catatan: DataTypes.TEXT,
+    total: DataTypes.DOUBLE,
   },
   {
     freezeTableNames: true,

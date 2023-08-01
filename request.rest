@@ -29,3 +29,16 @@ Content-Type: application/json
     "price": 296000,
     "stok": 0
 }
+
+###
+GET http://localhost:5000/nota
+Content-Type: application/json
+
+{
+    "year": "2023",
+    "month": "7",
+    "day": "24"
+}
+
+###
+GET http://localhost:5000/nota?search=${date}&page=${page}&limit=&${limit}
